@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+
+@import "./variables";
+@import "./general";
+
+// Components
+@import "./components/navbar.scss";
+@import "./components/add-todo.scss";
+@import "./components/search-todo.scss";
+@import "./components/todo-list.scss";
+@import "./components/add-todo-modal.scss";
+@import "./components/date-picker.scss";
+
+@import "./normalize";

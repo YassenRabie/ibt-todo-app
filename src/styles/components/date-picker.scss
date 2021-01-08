@@ -1,0 +1,34 @@
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+   background-color: $primary;
+}
+
+.ant-picker-today-btn {
+   color: $primary;
+}
+
+.ant-picker:hover,
+.ant-picker-focused {
+   border-color: $primary;
+}
+
+.ant-picker-focused {
+   -webkit-box-shadow: 0 0 0 2px rgba(255, 155, 24, 0.2);
+   box-shadow: 0 0 0 2px rgba(255, 155, 24, 0.2);
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+   border: 1px solid $secondary;
+}
+
+.ant-btn-primary {
+   background-color: $primary;
+}
+a {
+   color: $primary;
+}
+
+.ant-picker-time-panel-column > li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+   background: #fff0e6;
+}

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { GlobalProvider } from './context/GlobalState'
+import Navbar from "./components/Navbar"
+import Filter from "./components/calendar"
+import Home from "./components/home"
+import 'antd/dist/antd.css'
+import "./styles/_base.scss"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <div>
+         <GlobalProvider>
+            <Router>
+               <Navbar />
+
+               <Switch>
+                  <Route path="/calendar">
+                     <Filter />
+                  </Route>
+                  <Route path="/">
+                     <Home />
+                  </Route>
+               </Switch>
+            </Router>
+         </GlobalProvider>
+      </div>
+   )
 }
 
-export default App;
+export default App

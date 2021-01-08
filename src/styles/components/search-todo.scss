@@ -1,0 +1,13 @@
+.search-todo {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   margin: 2rem 0;
+
+   input {
+      padding: 0.7rem 0.5rem;
+      width: 100%;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+   }
+}
