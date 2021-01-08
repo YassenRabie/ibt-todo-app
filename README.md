@@ -1,6 +1,6 @@
 # IBT TODO App
 
-Live Demo: [Live Demo](https://yassen-ibt.netlify.app/)
+Live Demo: https://yassen-ibt.netlify.app/
 
 ## Getting Started with Create React App
 
