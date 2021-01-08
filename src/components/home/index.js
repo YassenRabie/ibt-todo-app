@@ -14,7 +14,7 @@ const Home = () => {
       <div className="container">
          <AddTodo />
          <SearchTodo />
-         <h1 className="title">This is your tasks</h1>
+         {/* <h1 className="title">This is your tasks</h1> */}
          <TodoList />
       </div>
    )

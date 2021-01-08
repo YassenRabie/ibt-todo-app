@@ -16,7 +16,8 @@ const CalendarFilter = () => {
    }
 
    return (
-      <div className="flex">
+      <div className="flex calendar-filter">
+         <p>Search in your tasks by Date</p>
          <DatePicker className="input" defaultValue={moment(new Date())} onChange={(value) => onChange(value)} />
       </div>
    )

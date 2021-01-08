@@ -13,7 +13,6 @@ const Filter = () => {
    return (
       <div className="container">
          <CalendarFilter />
-         <h1 className="title">This is your tasks</h1>
          <TodoList />
       </div>
    )

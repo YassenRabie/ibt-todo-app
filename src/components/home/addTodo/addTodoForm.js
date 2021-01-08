@@ -6,7 +6,7 @@ import { DatePicker } from "antd"
 
 const initalState = {
    description: '',
-   date: moment(Date.now()).format("DD-MM-YYYY hh:mm:ss a")
+   date: moment(Date.now()).format("DD-MM-YYYY hh:mm a")
 }
 
 const AddTodoForm = ({ setModalOpen }) => {
@@ -21,7 +21,7 @@ const AddTodoForm = ({ setModalOpen }) => {
       console.log(value)
       setTodoData({
          ...todoData,
-         date: value === null ? moment(Date.now()).format("DD-MM-YYYY hh:mm:ss a") : moment(value).format("DD-MM-YYYY hh:mm:ss a")
+         date: value === null ? moment(Date.now()).format("DD-MM-YYYY hh:mm a") : moment(value).format("DD-MM-YYYY hh:mm a")
       })
    }
 
@@ -45,7 +45,8 @@ const AddTodoForm = ({ setModalOpen }) => {
          <form onSubmit={handleSubmit}>
             <span className="title center-text">Add new Task</span>
             <input type="text" className="input" name="description" placeholder="Task description..." required onChange={onChange} value={todoData.description} />
-            <DatePicker className="input" defaultValue={moment(new Date())} showTime={true} onChange={(value) => changeDate(value)} />
+            <label htmlFor="date">Due Date</label>
+            <DatePicker name="date" clearIcon={false} showNow={false} format="DD-MM-YYYY hh:mm a" className="input" defaultValue={moment(new Date())} showHour={true} showMinute={true} showSecond={false} showTime={true} onChange={(value) => changeDate(value)} />
             <input type="submit" className="btn" value="Add Task" />
          </form>
       </div>
