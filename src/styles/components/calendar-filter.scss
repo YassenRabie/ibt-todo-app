@@ -1,4 +1,7 @@
 .calendar-filter {
    flex-direction: column;
    margin: 2rem 0;
+   .input {
+      width: 100%;
+   }
 }

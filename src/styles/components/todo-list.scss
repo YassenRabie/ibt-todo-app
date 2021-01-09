@@ -5,11 +5,15 @@
    gap: 1.5rem;
 
    .todo-item {
-      display: flex;
-      justify-content: flex-start;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
       gap: 1rem;
       font-size: 15px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.15);
+      padding: 1rem;
 
       .todo-info {
          .todo-description {
@@ -27,6 +31,10 @@
       .remove-todo {
          opacity: 0;
          transition: opacity 0.2s ease;
+         margin-left: auto;
+         @media (max-width: $breakpoint) {
+            opacity: 1;
+         }
       }
       &:hover .remove-todo {
          opacity: 1;

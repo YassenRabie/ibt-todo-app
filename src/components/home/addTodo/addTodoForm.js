@@ -44,8 +44,9 @@ const AddTodoForm = ({ setModalOpen }) => {
       <div>
          <form onSubmit={handleSubmit}>
             <span className="title center-text">Add new Task</span>
-            <input type="text" className="input" name="description" placeholder="Task description..." required onChange={onChange} value={todoData.description} />
-            <label htmlFor="date">Due Date</label>
+            <label htmlFor="date">Task Description</label>
+            <input type="text" className="input" name="description" placeholder="e.g. Meeting..." required onChange={onChange} value={todoData.description} />
+            <label htmlFor="date">Task Date</label>
             <DatePicker name="date" clearIcon={false} showNow={false} format="DD-MM-YYYY hh:mm a" className="input" defaultValue={moment(new Date())} showHour={true} showMinute={true} showSecond={false} showTime={true} onChange={(value) => changeDate(value)} />
             <input type="submit" className="btn" value="Add Task" />
          </form>
