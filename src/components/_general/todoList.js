@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { GlobalContext } from '../../context/GlobalState'
 import TodoItem from './todoItem'
-import moment from "moment"
 
 const TodoList = () => {
    const { todoItems } = useContext(GlobalContext)
